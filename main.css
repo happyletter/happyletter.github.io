@@ -1,0 +1,128 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+#menu {
+    position: fixed;
+    top: 0px;
+    padding-left: 3%;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(154, 165, 168, 0.767);
+}
+
+.menu_path {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+    transition: background-color 0.5s, color 0.4s;
+}
+
+.menu_path:hover {
+    background-color: white;
+    color: rgb(1, 3, 22);
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.4s;
+}
+
+#user {
+    position: absolute;
+    right: 4vw;
+}
+
+#home-content {
+    background-image: url("homeimg/background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 56.25vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home_title {
+    transform: rotate(12deg);
+    font-family: Brush Script MT;
+    color:rgba(104, 80, 36, 0.719);
+    height: fit-content;
+    width: fit-content;
+    font-size: max(7vw,35px);
+    padding: 1% 1% 1% 1%;
+    border-radius: 1.5vw;
+    margin-left: 10%;
+    text-align: center;
+    transition: color 0.3s;
+    margin-top: 10%;
+}
+
+#home_title:hover {
+    color:rgb(104, 80, 36);
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.space {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#second_space {
+    justify-content: space-around;
+}
+
+
+#mail_img {
+    width: max(30vw,400px);
+    border-radius: 2vw;
+    margin-top: 50px;
+}
+
+.note {
+    font-size: max(20px,1.3vw);
+    font-family: Candara;
+}
+
+#note1 {
+    width: max(30vw,400px);
+    text-align: center;
+    margin-top: 50px;
+}
+
+#third_space {
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding: 2% 2% 2% 2%;
+    flex-direction: column;
+    background-image: url("homeimg/note2img.jpg");
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+}
+
+#note2 {
+    text-align: center;
+    width: 70%;
+    height: fit-content;
+    color: aliceblue;
+}
+
+#note2 > p {
+    margin-top: 5px;
+}
